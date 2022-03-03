@@ -1,0 +1,58 @@
+.one-line {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.el-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+$sizes-rem: (
+  1: 1rem,
+  2: 2rem,
+  3: 3rem,
+  4: 4rem,
+  5: 5rem,
+);
+
+//Margins
+@each $name, $size in $sizes-rem {
+  .margin-#{$name} {
+    margin: $size !important;
+  }
+  .margin-top-#{$name} {
+    margin-top: $size !important;
+  }
+  .margin-right-#{$name} {
+    margin-right: $size !important;
+  }
+  .margin-bottom-#{$name} {
+    margin-bottom: $size !important;
+  }
+  .margin-left-#{$name} {
+    margin-left: $size !important;
+  }
+}
+
+//Paddings
+@each $name, $size in $sizes-rem {
+  .padding-#{$name} {
+    padding: $size !important;
+  }
+  .padding-top-#{$name} {
+    padding-top: $size !important;
+  }
+  .padding-right-#{$name} {
+    padding-right: $size !important;
+  }
+  .padding-bottom-#{$name} {
+    padding-bottom: $size !important;
+  }
+  .padding-left-#{$name} {
+    padding-left: $size !important;
+  }
+}

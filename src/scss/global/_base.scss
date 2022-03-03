@@ -1,0 +1,29 @@
+@import "./variables";
+
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  min-height: 100vh;
+  background: $theme-light-bg;
+  color: $text-color-light;
+}
+
+body.dark-layout {
+  background: $theme-dark-bg;
+  color: $text-color-dark;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
